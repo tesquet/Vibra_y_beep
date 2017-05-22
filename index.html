@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>BEEP Y VIBRAR</title>
+<link href="jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="fonts.css">
+
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Beep y Vibrar</h1>
+	</div>
+    <div><br></div>
+    
+<script>
+	function BEEP()
+	navigator.vibrate(100)
+	</script>
+
+	<script>
+	function VIBRAR()
+	navigator.vibrate(1000000000)
+	</script>
+    
+			
+	<div data-role="content">	
+		<div align="center" data-role="controlgroup" data-type="vertical">
+<div style="width:20%">
+               
+<input type="button" value="BEEP" onclick="BEEP()">
+
+  <input type="button" value="VIBRAR" onclick="VIBRAR()">
+         
+</div>
+<div><br></div>
+<div><br></div>
+</div>
+    
+	<div data-role="footer">
+		<h4>Eduardo Martín Ortíz Hernández</h4>
+	</div>
+</div>
+
+</body>
+</html>
